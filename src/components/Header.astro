@@ -2,11 +2,12 @@
 import GitHub from "./icons/GitHub.astro";
 import Menu from "./icons/Menu.astro";
 import JDM from "./icons/JDM.astro";
+import Heart from "./icons/Heart.astro";
 ---
 
 <nav class="p-4 flex items-center justify-between bg-white">
   <a href="">
-    <div class="flex items-center">
+    <div class="flex items-center ms-3">
       <JDM />
     </div>
   </a>
@@ -14,13 +15,22 @@ import JDM from "./icons/JDM.astro";
   <div
     class="flex items-center justify-between gap-8 text-lg font-mono text-slate-800 font-bold"
   >
-    <a href="#" class="hover:text-[#00a551] hover:ease-out">Home</a>
-    <a href="#" class="hover:text-[#00a551] hover:ease-out">Rest API</a>
+    <a href="#" class="hover:text-[#00a551] hover:ease-out duration-500">Docs</a
+    >
+    <a href="#" class="hover:text-[#00a551] hover:ease-out duration-500"
+      >About</a
+    >
     <button
       type="button"
-      class="border hover:bg-[#00a551] rounded-lg p-2.5 me-2 dark:border-slate-800 dark:text-slate-800 dark:hover:text-white dark:focus:ring-[#050708] dark:hover:border-[#00a551] hover:ease-out"
+      class="border hover:bg-[#00a551] rounded-lg px-5 py-1.5 me-3 dark:border-[#00a551] dark:text-slate-800 dark:hover:text-white dark:focus:ring-[#050708] dark:hover:border-[#00a551] hover:ease-out duration-500 text-sm hidden sm:block transition"
     >
-      <GitHub />
+      SUPPORT US
+    </button>
+    <button
+      type="button"
+      class="font-medium rounded-lg p-2.5 me-2 dark:bg-[#00a551] sm:hidden"
+    >
+      <Heart />
     </button>
   </div>
 </nav>
