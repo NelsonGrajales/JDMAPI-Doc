@@ -1,0 +1,50 @@
+---
+import Supabase from "./icons/Supabase.astro";
+import GitHub from "./icons/GitHub.astro";
+import HeartF from "./icons/HeartF.astro";
+import Dev from "./icons/Dev.astro";
+import Render from "./icons/Render.astro";
+---
+
+<footer class="bg-white dark:bg-[#202329] text-[#9e9e9e] py-20">
+  <div
+    class="mx-auto w-full max-w-screen-xl uppercase flex flex-col justify-center font-bold text-xs gap-4"
+  >
+    <ul class="flex flex-row justify-center gap-12">
+      <li class="hover:text-[#00a551] hover:ease-out duration-500">
+        <a href="">Autos: 88</a>
+      </li>
+      <li class="hover:text-[#00a551] hover:ease-out duration-500">
+        <a href="">Marcas: 88</a>
+      </li>
+      <li class="hover:text-[#00a551] hover:ease-out duration-500">
+        <a href="">Motores: 77</a>
+      </li>
+    </ul>
+    <span class="justify-center flex flex-row items-center gap-2"
+      >SERVER STATUS <span class="text-[#55cc44] text-2xl">•</span></span
+    >
+  </div>
+  <div class="flex flex-row justify-center items-center gap-7 pt-4">
+    <Render width="100" height="25" />
+    <Supabase width="55" height="55" />
+  </div>
+
+  <ul class="flex flex-row items-center justify-center gap-8 pt-4">
+    <li class="hover:text-[#00a551] hover:ease-out duration-500">
+      <a href=""><GitHub width="22" hieght="22" /></a>
+    </li>
+    <li class="hover:text-[#00a551] hover:ease-out duration-500">
+      <a href=""><HeartF width="23" hieght="23" /></a>
+    </li>
+  </ul>
+  <span class="flex flex-row gap-2 text-sm items-center justify-center mt-5"
+    ><Dev /> by
+    <a
+      href=""
+      class="underline underline-offset-4 text-[#00a551] hover:no-underline hover:text-white hover:underline-hover transition-all duration-300"
+      >Nelson Grajales</a
+    >
+    2024
+  </span>
+</footer>
