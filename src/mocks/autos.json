@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "marca": "Toyota",
+        "modelo": "AE86",
+        "lanzamiento": 1983,
+        "carroceria": "Coupé",
+        "traccion": "RWD",
+        "aceleracion": "0-100 8.5s",
+        "velocidadmaxima": "200 km/h",
+        "imagen": "https://tdsepmajshhcxxzquxxj.supabase.co/storage/v1/object/public/JDMAPI/autos/ae86.jpg",
+        "motorid": {
+            "tipo": "Inline-4",
+            "nombre": "4A-GE",
+            "caballosdefuerza": "112 hp"
+        }
+    },
+    {
+        "id": 2,
+        "marca": "Toyota",
+        "modelo": "Supra Mk4",
+        "lanzamiento": 1993,
+        "carroceria": "Coupé",
+        "traccion": "RWD",
+        "aceleracion": "0-100 5.1s",
+        "velocidadmaxima": "250 km/h",
+        "imagen": "https://tdsepmajshhcxxzquxxj.supabase.co/storage/v1/object/public/JDMAPI/autos/supramk4.jpg",
+        "motorid": {
+            "tipo": "Inline-6 Twin-Turbo",
+            "nombre": "2JZ-GTE",
+            "caballosdefuerza": "320 hp"
+        }
+    },
+    {
+        "id": 3,
+        "marca": "Nissan",
+        "modelo": "300ZX (Fairlady)",
+        "lanzamiento": 1989,
+        "carroceria": "Coupé",
+        "traccion": "RWD",
+        "aceleracion": "0-100 5.9s",
+        "velocidadmaxima": "250 km/h",
+        "imagen": "https://tdsepmajshhcxxzquxxj.supabase.co/storage/v1/object/public/JDMAPI/autos/300zx.jpg",
+        "motorid": {
+            "tipo": "V6 Twin-Turbo",
+            "nombre": "VG30DETT",
+            "caballosdefuerza": "300 hp"
+        }
+    },
+    {
+        "id": 4,
+        "marca": "Mazda",
+        "modelo": "RX-7",
+        "lanzamiento": 1978,
+        "carroceria": "Coupé",
+        "traccion": "RWD",
+        "aceleracion": "0-100 5.3s",
+        "velocidadmaxima": "250 km/h",
+        "imagen": "https://tdsepmajshhcxxzquxxj.supabase.co/storage/v1/object/public/JDMAPI/autos/rx-7.jpg",
+        "motorid": {
+            "tipo": "Rotativo Twin-Turbo",
+            "nombre": "13B-REW",
+            "caballosdefuerza": "255 hp"
+        }
+    }
+]
