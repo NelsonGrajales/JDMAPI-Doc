@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="About">
+  <section class="bg-white gap-8 px-6 max-w-4xl mx-auto mb-16 text-[#333333]">
+    <h1 class="font-bold text-3xl my-10 leading-tight">Sobre el proyecto</h1>
+    <h2>¿Qué es?</h2>
+    <p>
+      <span class="underline underline-offset-4 text-[#00a551]"
+        >The JDM API</span
+      >es una API REST que intenta recopilar datos sobre autos de JDM. Puedes
+      tener acceso tanto a los autos JDM, marcas y motores más icónicos del
+      mercado japonés.
+    </p>
+
+    <h2>¿Quién soy?</h2>
+    <p>
+      Soy <span class="underline underline-offset-4 text-[#00a551]"
+        >Nelson Grajales</span
+      >, un programador y fanático de los autos.
+    </p>
+
+    <h2>¿Por qué creé esta API?</h2>
+    <p>
+      Quería practicar mis habilidades de backend y me pareció interesante crear
+      una API sobre autos, específicamente los autos japoneses. Creo que hasta
+      ahora no hay algo similar, así que pensé que sería algo original. El
+      proyecto es muy básico, pero <span
+        class="underline underline-offset-4 text-[#00a551]"
+        >el objetivo es mejorarlo con el tiempo.</span
+      >
+    </p>
+
+    <h2>Información técnica</h2>
+    <p>
+      El proyecto está alojado en Render y se utiliza una base de datos alojada
+      en Supabase. Además, se emplea Node.js.
+    </p>
+
+    <h2>Contribuir al proyecto</h2>
+    <p>
+      Puedes ayudar al proyecto mediante <a
+        class="underline underline-offset-4 text-[#00a551] hover:no-underline hover:underline-hover transition-all duration-300"
+        href="https://github.com/NelsonGrajales/JDM-APIs "
+        target="_blank">GitHub</a
+      >. Hay mucho por mejorar.
+    </p>
+
+    <h2>Derechos de autor</h2>
+    <p>
+      <span class="underline underline-offset-4 text-[#00a551]"
+        >The JDM API</span
+      > es creada con la intención de ser un proyecto de código abierto. La información
+      es recopilada por mí y las imágenes son generadas por IA.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  html {
+    background-color: white;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin: 15px 0 15px 0;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 0.8125rem;
+    font-weight: normal;
+    word-wrap: break-word;
+    font-kerning: normal;
+  }
+</style>
