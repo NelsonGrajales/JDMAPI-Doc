@@ -1,0 +1,36 @@
+---
+import Autos from "../mocks/autos.json";
+
+import Pre from "./Pre.astro";
+
+const coches = Autos;
+---
+
+<div class="mx-12 py-12">
+  <div class="flex flex-row gap-8 justify-center flex-wrap pt-9">
+    {
+      coches.map((autos) => (
+        <article class="flex flex-col items-center bg-[#202329] rounded-lg shadow sm:flex-row md:max-w-xl ">
+          <img
+            class="object-cover w-full rounded-t-lg h-72 md:h-auto md:w-44 md:rounded-none md:rounded-s-lg"
+            src={autos.imagen}
+            alt=""
+          />
+
+          <div class="flex flex-col justify-between p-4 leading-normal">
+            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              {autos.modelo}
+            </h5>
+            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 tracking-widest">
+              Marca: {autos.marca} - Lanzamiento: {autos.lanzamiento} <br />
+              {autos.velocidadmaxima} - {autos.aceleracion} <br />
+              {autos.traccion} <br />
+              {autos.motorid.nombre}
+              {autos.motorid.caballosdefuerza}
+            </p>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</div>
