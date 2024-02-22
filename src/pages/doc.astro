@@ -14,7 +14,10 @@ const final = "}";
     <h1 class="font-bold text-4xl my-10 leading-tight">Documentación</h1>
     <h2>Rest</h2>
     <h3 class="font-bold text-xl">Url basica:</h3>
-    <span>https://jdmapi.onrender.com/</span>
+    <span>
+      <a href="https://jdmapi.onrender.com/">https://jdmapi.onrender.com/</a
+      ></span
+    >
     <p class="mt-4">
       La url basica muestra los endpoints disponibles para peticiones
     </p>
@@ -32,14 +35,21 @@ const final = "}";
 
     <h3 class="font-bold text-xl">Get a todos los autos</h3>
     <p class="mt-4">
-      Puedes acceder a la lista de autos usando el endpoint /autos
+      Puedes acceder a la lista de autos usando el endpoint
+      <span
+        class="bg-green-100 text-[#00a551] font-medium me-2 px-2.5 py-0.5 rounded"
+        >/v1/autos</span
+      >
     </p>
 
     <img src={autos.src} alt="" />
 
     <h3 class="font-bold text-xl">Get a un solo auto</h3>
     <p class="mt-4">
-      Puedes acceder a un auto en espeecifico usando su id /autos/2
+      Puedes acceder a un auto en espeecifico usando su id <span
+        class="bg-green-100 text-[#00a551] font-medium me-2 px-2.5 py-0.5 rounded"
+        >/v1/autos/2</span
+      >
     </p>
 
     <img src={autosid.src} alt="" />
@@ -47,7 +57,13 @@ const final = "}";
     <h3 class="font-bold text-xl">Get a un auto por nombre</h3>
     <p class="mt-4">
       Puedes acceder a un auto en espeecifico con su nombre
-      /autos?nombreAuto=Supra Mk4
+
+      <p class="mt-4">
+        Puedes acceder a un auto en espeecifico usando su id <span
+          class="bg-green-100 text-[#00a551] font-medium me-2 px-2.5 py-0.5 rounded"
+          >/v1/autos?nombreAuto=Supra Mk4</span
+        >
+      </p>
     </p>
 
     <img src={autosid.src} alt="" />
@@ -57,7 +73,11 @@ const final = "}";
 
     <h3 class="font-bold text-xl">Get a todas las marcas</h3>
     <p class="mt-4">
-      Puedes acceder a la lista de marcas usando el endpoint /marcas
+      Puedes acceder a la lista de marcas usando el endpoint
+      <span
+        class="bg-green-100 text-[#00a551] font-medium me-2 px-2.5 py-0.5 rounded"
+        >/v1/marcas</span
+      >
     </p>
 
     <img src={marcas.src} alt="" />
@@ -67,7 +87,11 @@ const final = "}";
 
     <h3 class="font-bold text-xl">Get a todos los motores</h3>
     <p class="mt-4">
-      Puedes acceder a la lista de motores usando el endpoint /motores
+      Puedes acceder a la lista de motores usando el endpoint
+      <span
+        class="bg-green-100 text-[#00a551] font-medium me-2 px-2.5 py-0.5 rounded"
+        >/v1/motores</span
+      >
     </p>
     <img src={motores.src} alt="" />
   </section>
@@ -80,7 +104,10 @@ const final = "}";
   h2 {
     font-weight: 600;
     font-size: 1.6rem;
-    margin: 15px 0 15px 0;
+    margin: 30px 0 15px 0;
+  }
+  h3 {
+    margin-top: 30px;
   }
 
   p,
