@@ -1,5 +1,10 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import autos from "../img/autos.png";
+import autosid from "../img/autosid.png";
+import endpoinst from "../img/endpoints.png";
+import marcas from "../img/marcas.png";
+import motores from "../img/motores.png";
 const inicio = "{";
 const final = "}";
 ---
@@ -13,16 +18,8 @@ const final = "}";
     <p class="mt-4">
       La url basica muestra los endpoints disponibles para peticiones
     </p>
-    <pre
-      class="bg-[#202329] text-white">
-        <code>
-        <span>{inicio}</span>
-           <span class="token">"autos"</span>:   <span class="value">https://jdmapi.onrender.com/v1/autos</span>,
-           <span class="token">"marcas"</span>:  <span class="value">https://jdmapi.onrender.com/v1/marcas</span> ,
-           <span class="token">"motores"</span>: <span class="value">https://jdmapi.onrender.com/v1/motores</span> 
-        <span>{final}</span>
-        </code>
-    </pre>
+
+    <img src={endpoinst.src} alt="" />
     <p>Estos son los tres endpoints disponibles:</p>
     <ul>
       <li><span>Autos</span>: get para todos los autos.</li>
@@ -38,28 +35,22 @@ const final = "}";
       Puedes acceder a la lista de autos usando el endpoint /autos
     </p>
 
-    <pre>
-        <code /> 
-    </pre>
+    <img src={autos.src} alt="" />
 
     <h3 class="font-bold text-xl">Get a un solo auto</h3>
     <p class="mt-4">
-      Puedes acceder a un auto en espeecifico usando su id /autos/id
+      Puedes acceder a un auto en espeecifico usando su id /autos/2
     </p>
 
-    <pre>
-        <code /> 
-    </pre>
+    <img src={autosid.src} alt="" />
 
     <h3 class="font-bold text-xl">Get a un auto por nombre</h3>
     <p class="mt-4">
       Puedes acceder a un auto en espeecifico con su nombre
-      /autos?nombreAuto=[nombredelauto]
+      /autos?nombreAuto=Supra Mk4
     </p>
 
-    <pre>
-        <code /> 
-    </pre>
+    <img src={autosid.src} alt="" />
 
     <h2>Marcas</h2>
     <p class="mt-4">Hay un total de 4 marcas</p>
@@ -69,9 +60,7 @@ const final = "}";
       Puedes acceder a la lista de marcas usando el endpoint /marcas
     </p>
 
-    <pre>
-        <code /> 
-    </pre>
+    <img src={marcas.src} alt="" />
 
     <h2>Motores</h2>
     <p class="mt-4">Hay un total de 7 motores</p>
@@ -80,6 +69,7 @@ const final = "}";
     <p class="mt-4">
       Puedes acceder a la lista de motores usando el endpoint /motores
     </p>
+    <img src={motores.src} alt="" />
   </section>
 </Layout>
 
