@@ -1,0 +1,120 @@
+---
+import Layout from "../layouts/Layout.astro";
+const inicio = "{";
+const final = "}";
+---
+
+<Layout title="About">
+  <section class="bg-white gap-8 px-6 max-w-4xl mx-auto mb-16 text-[#333333]">
+    <h1 class="font-bold text-4xl my-10 leading-tight">Documentación</h1>
+    <h2>Rest</h2>
+    <h3 class="font-bold text-xl">Url basica:</h3>
+    <span>https://jdmapi.onrender.com/</span>
+    <p class="mt-4">
+      La url basica muestra los endpoints disponibles para peticiones
+    </p>
+    <pre
+      class="bg-[#202329] text-white">
+        <code>
+        <span>{inicio}</span>
+           <span class="token">"autos"</span>:   <span class="value">https://jdmapi.onrender.com/v1/autos</span>,
+           <span class="token">"marcas"</span>:  <span class="value">https://jdmapi.onrender.com/v1/marcas</span> ,
+           <span class="token">"motores"</span>: <span class="value">https://jdmapi.onrender.com/v1/motores</span> 
+        <span>{final}</span>
+        </code>
+    </pre>
+    <p>Estos son los tres endpoints disponibles:</p>
+    <ul>
+      <li><span>Autos</span>: get para todos los autos.</li>
+      <li><span>Marcas</span>: get para todos las marcas.</li>
+      <li><span>Motores</span>: get para todos los motores.</li>
+    </ul>
+
+    <h2>Autos</h2>
+    <p class="mt-4">Hay un total de 4 autos</p>
+
+    <h3 class="font-bold text-xl">Get a todos los autos</h3>
+    <p class="mt-4">
+      Puedes acceder a la lista de autos usando el endpoint /autos
+    </p>
+
+    <pre>
+        <code /> 
+    </pre>
+
+    <h3 class="font-bold text-xl">Get a un solo auto</h3>
+    <p class="mt-4">
+      Puedes acceder a un auto en espeecifico usando su id /autos/id
+    </p>
+
+    <pre>
+        <code /> 
+    </pre>
+
+    <h3 class="font-bold text-xl">Get a un auto por nombre</h3>
+    <p class="mt-4">
+      Puedes acceder a un auto en espeecifico con su nombre
+      /autos?nombreAuto=[nombredelauto]
+    </p>
+
+    <pre>
+        <code /> 
+    </pre>
+
+    <h2>Marcas</h2>
+    <p class="mt-4">Hay un total de 4 marcas</p>
+
+    <h3 class="font-bold text-xl">Get a todas las marcas</h3>
+    <p class="mt-4">
+      Puedes acceder a la lista de marcas usando el endpoint /marcas
+    </p>
+
+    <pre>
+        <code /> 
+    </pre>
+
+    <h2>Motores</h2>
+    <p class="mt-4">Hay un total de 7 motores</p>
+
+    <h3 class="font-bold text-xl">Get a todos los motores</h3>
+    <p class="mt-4">
+      Puedes acceder a la lista de motores usando el endpoint /motores
+    </p>
+  </section>
+</Layout>
+
+<style>
+  html {
+    background-color: white;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin: 15px 0 15px 0;
+  }
+
+  p,
+  li {
+    font-size: 1.2rem;
+    margin-bottom: 0.8125rem;
+    font-weight: normal;
+    word-wrap: break-word;
+    font-kerning: normal;
+  }
+  pre {
+    margin: 0.5em 0 1em;
+    overflow: auto;
+    padding: 2em;
+  }
+  .token {
+    color: #fc77c3;
+  }
+  .value {
+    color: #4cff8f;
+  }
+  span {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    color: #00a551;
+  }
+</style>
